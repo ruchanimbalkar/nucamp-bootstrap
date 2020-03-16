@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="navbarstyles.css" />
+
+        <title>Navbar in Bootstrap 4</title>
+
+    </head>
+
+    <body>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Navbars</h1>
+                        <h2>navbars in bootstrap</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="nucampNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#"> StickyTop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fixedtop.html"> Fixed Top</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fixedbottom.html"> Fixed Bottom</a></li>
+                        <li class="nav-item"><a class="nav-link" href="defaultnavbar.html"> Default</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="col">
+                    <h1>Navbar placement</h1>
+                    <p>
+                        Placement Use our position utilities to place navbars in non-static positions. 
+                        Choose from fixed to the top, fixed to the bottom, or stickied to the top 
+                        (scrolls with the page until it reaches the top, then stays there). Fixed navbars
+                         use position: fixed, meaning they’re pulled from the normal flow of the DOM and may 
+                         require custom CSS (e.g., padding-top on the &lt;body&gt;) to prevent overlap with other
+                         elements. Also note that .sticky-top uses position: sticky, which isn’t fully 
+                         supported in every browser.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col">
+                    <h1>Difference between Sticktop and Default navbar placement</h1>
+                    <ol>
+                        <li> Sticky-top uses position: sticky, which isn’t fully 
+                            supported in every browser.
+                            Try opening this page on many browsers and see where it does not work </li>
+
+                        <li>
+                            Scrolling up and down to see the second difference
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-12 col-sm-6">
+                    <h1>Some Lorel Ipsum Text</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula semper justo a pretium.
+                         Nulla quis tincidunt nibh, eget dapibus tortor. Sed nec tincidunt ligula, et commodo nibh. 
+                         Integer pulvinar in lorem non maximus. Nulla a iaculis orci. Aliquam finibus laoreet elit sed tincidunt.
+                          Duis imperdiet justo sit amet lectus pellentesque vestibulum. Donec posuere faucibus enim, nec porta mi 
+                          luctus id. Pellentesque suscipit lorem ultrices elit venenatis, ac porta erat pharetra.
+                         Nam turpis nulla, pellentesque vel pellentesque et, aliquam aliquet eros.
+                    </p>
+                </div>
+                <div class="col">
+                    <h1>More Lorel Ipsum Text</h1>
+                    <p>
+                        Mauris gravida, ante sit amet porttitor ultricies, libero justo dapibus elit, in 
+                        faucibus lacus ex ut nulla. Etiam efficitur nec magna eget suscipit. 
+                        Suspendisse semper iaculis placerat. Morbi scelerisque ex laoreet justo mattis dapibus. 
+                        Ut et orci porttitor, posuere nunc id, lobortis enim. Donec tristique blandit urna, 
+                        vel dictum dolor sagittis ac. Phasellus non est mi. Quisque placerat odio a enim tincidunt, 
+                        pharetra aliquam enim fermentum. Sed vel elementum orci. Integer nec lacus vel tellus mollis tincidunt.
+                         Vestibulum ac nisi in arcu efficitur scelerisque sit amet nec dolor. Etiam vel enim aliquam elit accumsan
+                          tempus sed et lorem. Sed eu odio luctus, ullamcorper tellus in, feugiat augue. Praesent iaculis, felis
+                           non faucibus placerat, sem nulla dapibus metus, sit amet ultricies leo risus quis tellus. Fusce
+                            dignissim augue ut tellus commodo, ut accumsan lorem molestie.
+                         Suspendisse accumsan consectetur velit, sit amet feugiat quam porttitor quis.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+
+    </body>
+</html>

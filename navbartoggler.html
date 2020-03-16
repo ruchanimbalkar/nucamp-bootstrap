@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="navbarstyles.css" />
+
+        <title>Navbar Toggler  in Bootstrap 4</title>
+
+
+    </head>
+
+    <body>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Navbars</h1>
+                        <h2>navbars in bootstrap</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar  navbar-expand navbar-dark sticky-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nucampNavbar">
+                    
+                        <ul class="navbar-nav">
+                            <li class="nav-item "><a class="nav-link" href="navbar.html"> Navbar</a></li>
+                            <li class="nav-item "><a class="nav-link" href="defaultnavbar.html">Placement</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-bars"></i> Toggler </a></li>
+                            <li class="nav-item "><a class="nav-link" href="navbarcolorschemes.html">Color Schemes</a></li>
+                            <li class="nav-item "><a class="nav-link" href="navbarimages.html"> Brand &  Images</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="hidingcontentnavbar.html"> Hiding Content</a></li>
+                            <li class="nav-item"><a class="nav-link" href="utilities_demo.html">Color & Space </a></li>
+                        </ul>
+                   </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row row-content align-items-center">
+                <div class="col">
+                           <p > Navbar Toggler Demos </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <nav class="navbar navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="#">Hidden brand</a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+        
+
+          <nav class="navbar  navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+            <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+            <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+            <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    </body>
+</html>
