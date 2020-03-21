@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cites.css" />
+
+    <title>Bootstrap :  The only way to strap </title>
+
+
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/bootstrap-thumb.png" class="img-fluid" /></a>
+                 </div>
+                <div class="col">
+                    <h1>Bootstrap</h1>
+                    <h2>the only way to strap</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top mt-1">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/bootstrap-thumb.png" height="30" width="30" /></a>  
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+	                <li class="nav-item active"><a class="nav-link" href="#">Tabs And Accordion</a></li>
+	                <li class="nav-item "><a class="nav-link" href="tooltip.html">Tooltips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="modal.html"> Modal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carousel.html"> Carousel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <h2>Tabs</h2>
+                <p>Takes the basic nav from above and adds the .nav-tabs class to generate a tabbed interface
+                    </p>
+                <hr />
+              
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col">
+                <h3>No Fade</h3>
+                <p> There is just content change</p>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-shop-tab" data-toggle="tab" href="#nav-shop" role="tab" aria-controls="nav-home" aria-selected="true">Shop</a>
+                      <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-profile" aria-selected="false">Review</a>
+                      <a class="nav-item nav-link" id="nav-cart-tab" data-toggle="tab" href="#nav-cart" role="tab" aria-controls="nav-contact" aria-selected="false">Cart</a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane  show active" id="nav-shop" role="tabpanel" aria-labelledby="nav-home-tab">Shop</div>
+                    <div class="tab-pane " id="nav-review" role="tabpanel" aria-labelledby="nav-profile-tab">Review</div>
+                    <div class="tab-pane " id="nav-cart" role="tabpanel" aria-labelledby="nav-contact-tab">Cart</div>
+                  </div>
+            </div>
+            
+        </div>
+
+
+        
+        <div class="row row-content">
+            <div class="col">
+                <h3>Fade</h3>
+                <p> Notice the subtle fading in</p>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+                  </div>
+            </div>
+            
+        </div>
+
+        <div class="row row-content">
+            <div class="col">
+                <h3>Accordion</h3>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" role="tab">
+                             <h4> <a data-toggle="collapse" data-target="#bootstrap">
+                              Bootstrap Outfitters <small>Outdoor Gear Specialists</small>
+                                </a>
+                             </h4>
+                             <div class="collapse show" id="bootstrap" data-parent="#accordion">
+                                <div class="card-body">
+                                  <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#git">
+                                Git Out Expeditions <small>Group Adventure Expeditions</small>
+                                </a>
+                            </h4>
+                            <div class="collapse" id="git" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#mongo">
+                                 Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop.</small>
+                                </a>
+                            </h4>
+                            <div class="collapse" id="mongo" data-parent="#accordion">
+                                <div class="card-body">
+                                 <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#node">
+                                Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small>
+                               </a>
+                            </h4>
+                            <div class="collapse" id="node" data-parent="#accordion">
+                                <div class="card-body">
+                                <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col">
+                <h3>Accordion with no data-parent attribute</h3>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" role="tab">
+                             <h4> <a data-toggle="collapse" data-target="#html">
+                              Html Markers
+                                </a>
+                             </h4>
+                             <div class="collapse show" id="html">
+                                <div class="card-body">
+                                  <p class="d-none d-sm-block">Html Markers make way for content.</p>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#css">
+                                Cascade falls
+                                </a>
+                            </h4>
+                            <div class="collapse" id="css" >
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Stylishly fall into the casadaing sheets!</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#js">
+                                 Script it</small>
+                                </a>
+                            </h4>
+                            <div class="collapse" id="js" >
+                                <div class="card-body">
+                                 <p class="d-none d-sm-block">Need to interact with the locals, javascript is the language to control conversations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#dt">
+                                Developer Tools
+                               </a>
+                            </h4>
+                            <div class="collapse" id="dt">
+                                <div class="card-body">
+                                <p class="d-none d-sm-block">Pressing F12 or Control Shift I can give you access to tools that whill empower you.</p>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-sm-9">
+            	
+                               
+            </div>
+       </div> 
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Tabs And Accordion</a></li>
+                        <li><a href="tooltip.html">Tooltips</a></li>
+                        <li><a href="modal.html">Modal</a></li>
+                        <li><a href="carousel.html">Carousel</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn btn-yahoo" href="https://getbootstrap.com/"><i class="fa fa-bold" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+12060640404"><i class="fa fa-phone"></i> 1-206-064-044</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:strapsites@bootstrap.co"><i class="fa fa-envelope-o"></i> strapsites@bootstrap.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+</body>
+
+</html>

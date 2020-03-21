@@ -1,0 +1,46 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+h2 {
+    color: #3046C5;
+}
+
+header h2 {
+    color: #CEC8FF;
+}
+.site-footer{
+    background-image: linear-gradient(#b7a8f8, white);
+    padding: 10px 0px;
+}
+
+
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    margin-top: 30px;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: blue;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    border: solid #5637DD;
+}
